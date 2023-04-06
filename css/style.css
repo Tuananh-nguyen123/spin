@@ -1,0 +1,52 @@
+/* responsive background */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/Image/backround1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.box-center {
+    margin: 0px auto;
+    text-align: center;
+    padding: 3%;
+}
+
+.member {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray
+}
+
+/*Áp dụng cho những browser có chiều rộng <= 900px*/
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/*Áp dụng cho những browser có chiều rộng >= 600px*/
+@media (min-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/*Áp dụng cho những browser có chiều rộng >= 800px*/
+@media (min-width: 800px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/*Áp dụng cho những browser có chiều rộng <= 700px*/
+@media (max-width: 700px) {
+    .member {
+        width: 60px;
+        height: 60px;
+    }
+}
